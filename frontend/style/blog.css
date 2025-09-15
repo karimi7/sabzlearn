@@ -1,0 +1,348 @@
+@import url('/frontend/style/variables.css');
+@import url('/frontend/style/fonts.css');
+@import url('/frontend/style/top-bar.css');
+@import url('/frontend/style/responsive.css');
+@import url('/frontend/style/navbar.css');
+@import url('/frontend/style/defaults.css');
+@import url('/frontend/style/footer.css');
+@import url('/frontend/style/course-box.css');
+@import url('/frontend/style/index.css');
+@import url('/frontend/style/helper.css');
+@import url('/frontend/style/breadcrumb.css');
+@import url('/frontend/style/sidebarCoursesBox.css');
+
+
+
+/*    Start Article Details Styles    */
+
+.article {
+    padding: 2.4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 30px rgba(70, 72, 77, 0.1);
+}
+
+.article__title {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--dark-color);
+    border-bottom: 2px solid #f3f3f3;
+    padding-bottom: 1rem;
+}
+
+.article__header {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 3rem;
+}
+
+.article-header__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.article-header__icon {
+    color: #c7c7c7;
+    font-size: 1.7rem;
+}
+
+.article-header__text {
+    font-size: 1.2rem;
+    color: #8f8f8f;
+}
+
+.article__banner {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.article__score {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.article__score-icon {
+    margin-left: -0.4rem;
+}
+
+.article__score-text {
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    color: #7d7d7f;
+}
+
+.article-read {
+    background-color: #f2f2f2;
+    border-radius: 3rem;
+    padding: 2rem 3rem;
+    margin: 3rem 0;
+}
+
+.article-read__title {
+    display: block;
+    color: #333333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.article-read__link {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #1e83f0;
+    line-height: 2.5rem;
+}
+
+.article-read__link:hover {
+    text-decoration: underline;
+}
+
+.article__second-banner {
+    display: block;
+    margin: 0 auto;
+}
+
+.article-section {
+    margin: 5rem 0;
+}
+
+.article-section__title {
+    font-size: 2.4rem;
+    color: #008c25;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.article-section__text {
+    margin: 2rem 0;
+}
+
+.article-section__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.article-socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.article-socialmedia__text {
+    font-size: 1.5rem;
+    color: #7d7e7f;
+}
+
+.article-socialmedia__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7b868a;
+}
+
+.suggestion__col6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.suggestion-articles {
+    margin: 4rem 0;
+    padding: 3.5rem 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #f0f2f7;
+}
+
+.suggestion-articles__content {
+    display: flex;
+    align-items: center;
+}
+
+.suggestion-articles__right {
+    position: relative;
+}
+
+.suggestion-articles__right::before{
+    content: 'قدیمی‌تر';
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    font-size: 1.8rem;
+    color: #adb5db;
+    font-weight: bold;
+    transform: rotate(180deg);
+}
+
+.suggestion-articles__icon-link {
+    color: #adb5db;
+}
+
+.suggestion-articles__link {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.suggestion-articles_left {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.suggestion-articles_left::before {
+    content: 'جدیدتر';
+    position: absolute;
+    top: -2rem;
+    right: 2rem;
+    font-size: 1.8rem;
+    color: #adb5db;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+}
+
+.comments__title{
+    color: var(--dark-color);
+    font-size: 1.2rem;
+}
+
+.comments__text{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+.comments__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.comments__content-title{
+    color: #6c757d;
+    font-size: 1.5rem;
+}
+
+.comments__content-textarea{
+    height: 18.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07);
+    margin-bottom: 2rem;
+}
+
+.comments__button{
+    max-width: 15rem;
+    padding: 0.8rem 1.7rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    transition: all 400ms ease;
+}
+
+.comments__button:hover{
+    background-color: #077415;
+}
+
+/*    Finish Article Details Styles    */
+
+
+
+
+
+
+/*    Start Side Bar Styles    */
+
+.main__col8 {
+    flex: 0 0 auto;
+    width: 66.6666%
+}
+
+.main__col4 {
+    flex: 0 0 auto;
+    width: 33.3333%
+}
+
+.course-sidebar {
+    overflow: hidden;
+}
+
+.course-sidebar__courses-title {
+    position: relative;
+}
+
+.course-sidebar__courses-title::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 39px;
+    background-color: var(--primary-color);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 12px;
+    right: -28px;
+    top: -7px;
+    transform: skewX(-10deg);
+}
+
+.sidebar-articles__list {
+    margin-top: 2rem;
+
+}
+
+.sidebar-articles__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0.9rem 1.3rem 0.9rem 1rem;
+    transition: all 400ms ease;
+}
+
+.sidebar-articles__item:hover {
+    padding-right: 2rem;
+    background-color: #f8f9fa;
+}
+
+.sidebar-articles__icon {
+    transition: all 400ms ease;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    color: #909aa7;
+}
+
+.sidebar-articles__item:hover .sidebar-articles__icon {
+    color: var(--primary-color);
+}
+
+.last-articles__list {
+    margin-top: 2rem;
+}
+
+.last-articles__item {
+    border-bottom: 1px solid #eeeeee;
+    padding: 1rem 0;
+}
+
+.last-articles__link {
+    font-size: 1.5rem;
+}
+
+/*    Finish Side Bar Styles    */
+
+
+
+
+
+
+/*    Start Helper Classes    */
+
+.paragraph {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #7d7e7f;
+}
+
+/*    Finish Helper Classes    */

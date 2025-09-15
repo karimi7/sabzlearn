@@ -1,0 +1,141 @@
+@import url('/frontend/style/variables.css');
+@import url('/frontend/style/fonts.css');
+@import url('/frontend/style/top-bar.css');
+@import url('/frontend/style/responsive.css');
+@import url('/frontend/style/navbar.css');
+@import url('/frontend/style/defaults.css');
+@import url('/frontend/style/footer.css');
+@import url('/frontend/style/course-box.css');
+@import url('/frontend/style/index.css');
+@import url('/frontend/style/pagination.css');
+
+
+/*   Start Courses Topbar Styles   */
+
+.courses {
+    margin: 4rem 0;
+}
+
+
+.courses-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.2rem;
+    box-shadow: 0 0 13px 1px rgba(70, 72, 77, 0.1);
+    border-radius: 0.5rem;
+}
+
+/*   Right   */
+
+.courses-topbar__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.courses-topbar__row-btn,
+.courses-topbar__column-btn {
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.2rem;
+    height: 3.8rem;
+    border-radius: 0.3rem;
+    border: 1px solid #e5e5e5;
+    color: #000;
+    cursor: pointer;
+    /* background-color: #e34c4c; */
+}
+
+.courses-topbar__icon--active {
+    color: var(--white-color);
+    background-color: #1e83f0;
+}
+
+.courses-topbar__selection {
+    cursor: pointer;
+    position: relative;
+}
+
+.courses-topbar__selection-title {
+    display: flex;
+    align-items: center;
+    height: 3.8rem;
+    border-radius: 0.3rem;
+    padding: 0.8rem 2rem;
+    border: 1px solid #e5e5e5;
+    color: #7d7e7f;
+    transition: all 400ms ease;
+}
+
+.courses-topbar__selection-title:hover {
+    color: var(--white-color);
+    background-color: #1e83f0;
+}
+
+.courses-topbar__selection-icon {
+    margin-right: 0.5rem;
+}
+
+.courses-topbar__selection-list {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    background-color: var(--white-color);
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 0 0 0.3rem 0.3rem;
+    border-bottom: 0.3rem solid var(--primary-color);
+    z-index: 10;
+    transition: all 400ms ease;
+}
+
+.courses-topbar__selection-item {
+    color: #5f5f5f;
+    font-size: 1.3rem;
+    padding: 0.9rem 1.4rem;
+    transition: all 200ms ease;
+}
+
+.courses-topbar__selection-item:hover {
+    background-color: #ddd;
+}
+
+.courses-topbar__selection-item--active {
+    background-color: #ddd !important;
+}
+
+.courses-topbar__selection:hover .courses-topbar__selection-list {
+    visibility: visible;
+    opacity: 100;
+}
+
+/*   Left   */
+
+.courses-topbar__left {
+    position: relative;
+    width: 30rem;
+}
+
+.courses-topbar__input {
+    width: 100%;
+    font-size: 1.5rem;
+    border: 1px solid #dcdcdc;
+    padding: 0.8rem 1.5rem 0.8rem 4.2rem;
+    border-radius: 0.5rem;
+}
+
+.courses-topbar__search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    color: #7d7e7f;
+    cursor: pointer;
+}
+
+/*   Finish Courses Topbar Styles   */

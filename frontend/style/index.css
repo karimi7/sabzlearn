@@ -1,0 +1,357 @@
+@import url('/frontend/style/variables.css');
+@import url('/frontend/style/fonts.css');
+@import url('/frontend/style/top-bar.css');
+@import url('/frontend/style/responsive.css');
+@import url('/frontend/style/navbar.css');
+@import url('/frontend/style/defaults.css');
+@import url('/frontend/style/footer.css');
+@import url('/frontend/style/course-box.css');
+@import url('/frontend/style/helper.css');
+
+
+
+
+/*    Start Landing Styles   */
+
+.landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/frontend/images/background_landing.jfif") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 9rem 0;
+    color: var(--white-color);
+}
+
+.landing__title {
+    font-size: 3.4rem;
+    font-weight: bold;
+}
+
+.landing__subtitle {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.landing__searchbar {
+    max-width: 700px;
+    position: relative;
+    margin: 3.5rem auto;
+    display: flex;
+}
+
+.landing__searchbar-input {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.landing__searchbar-btn {
+    border: none;
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    left: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.landing__searchbar-icon {
+    color: var(--white-color);
+    font-size: 2.2rem;
+}
+
+.landing-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.landing-status__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 25rem;
+}
+
+.landing-status__item svg {
+    color: var(--white-color);
+}
+
+.landing-status__count {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.landing-text {
+    font-weight: bold;
+}
+
+/*    Finish Landing Styles   */
+
+
+
+
+/*    Srart Latest Courses Styles   */
+
+.courses-header {
+    margin: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses-header__right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    padding-right: 1.4rem;
+}
+
+.courses-header__title {
+    font-size: 2.5rem;
+}
+
+.courses-header__text {
+    color: #9c9c9c;
+    font-size: 1.5rem;
+}
+
+.courses-header__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--white-color);
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.courses-header__link:hover {
+    color: var(--white-color);
+    background-color: #077415;
+}
+
+.course__col {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+/*    Finish Latest Courses Styles   */
+
+
+
+
+/*    Start About Us Styles    */
+
+.about-us {
+    margin: 6rem;
+}
+
+.about-us__header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-us__title {
+    max-width: 26rem;
+}
+
+.about-us__subtitle {
+    color: #9c9c9c;
+    font-size: 1.5rem;
+}
+
+.about-us__col {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.about-us__box {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+    padding: 2rem 1.5rem;
+}
+
+.about-us__icon {
+    color: #434343;
+    font-size: 6.5rem;
+}
+
+.about-us__box-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-right: 1rem;
+}
+
+.about-us__box-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.about-us__box-text {
+    color: var(--dark-color);
+    line-height: 2.5rem;
+}
+
+
+/*    Finish About Us Styles    */
+
+
+
+
+
+/*    Start Popular Courses Styles Classes    */
+
+.popular,
+.pre-sell {
+    margin: 6rem 0;
+}
+
+.popular__header {
+    margin: 4rem 0;
+}
+
+.popular__slider .course-box,
+.pre-sell__slider .course-box {
+    margin: 0 1.3rem;
+    box-shadow: 0 0 10px rgba(168, 172, 185, 0.3);
+}
+
+.popular__slider .course-box:hover,
+.pre-sell__slider .course-box:hover {
+    transform: none;
+}
+
+.swiper-wrapper {
+    margin-bottom: 4rem;
+}
+
+.pre-sell__slider,
+.popular__slider {
+    margin: 4rem 0;
+    position: relative;
+}
+
+/*    Finish Popular Courses Styles Classes    */
+
+
+
+
+/*    Start Pre-Sell Styles    */
+
+.pre-sell__header {
+    margin: 4rem 0;
+}
+
+/*    Finish Pre-Sell Styles    */
+
+
+
+
+
+/*    Start Articles Styles    */
+
+.articles-header {
+    margin: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.articles-header__right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    padding-right: 1.4rem;
+}
+
+.articles-header__title {
+    font-size: 2.5rem;
+}
+
+.articles-header__text {
+    color: #9c9c9c;
+    font-size: 1.5rem;
+}
+
+.articles-header__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--white-color);
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.articles-header__link:hover {
+    color: var(--white-color);
+    background-color: #077415;
+}
+
+.articles_col {
+    flex: 0 0 auto;
+    width: 33.33333%;
+}
+
+.article-card {
+    margin: 3rem 0;
+    transition: all 400ms ease;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 5px 30px rgba(70, 72, 77, 0.3);
+}
+
+.article-card:hover {
+    transform: translateY(-0.6rem);
+}
+
+.article-card__link-img img {
+    width: 100%;
+}
+
+.article-card__content {
+    padding: 1rem 2rem 3rem 2rem;
+}
+
+.article-card__link {
+    font-weight: bold;
+}
+
+.article-card__text {
+    color: #898989;
+    font-size: 1.2rem;
+    padding: 1rem 0 2.5rem 0;
+}
+
+.article-card__btn {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 400ms ease;
+}
+
+.article-card__btn:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+/*    Finish Articles Styles    */
