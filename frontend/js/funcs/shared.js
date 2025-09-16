@@ -308,7 +308,9 @@ const getAndShowNavbarMenus = async () => {
             'beforeend',
             `
             <li class="main-header__item">
-                <a href=category.html?cat=${menu.href} class="main-header__link">
+                <a href=category.html?cat=${
+                    menu.href
+                } class="main-header__link">
                 ${menu.title}
                     ${
                         menu.submenus.length !== 0
@@ -337,15 +339,14 @@ const getAndShowNavbarMenus = async () => {
 };
 
 const getAndShowCategoryCourses = async () => {
-    // const categoryName = getUrlParam('cat');
+    const categoryName = getUrlParam('cat');
 
     console.log(getUrlParam('cat'));
-    
 
-    // const res = await fetch(`http://localhost:4000/v1/courses/category/${categoryName}`);
-    // const courses = await res.json();
+    const res = await fetch(`http://localhost:4000/v1/courses/category/${categoryName}`);
+    const courses = await res.json();
 
-    // return courses;
+    return courses;
 };
 
 export {

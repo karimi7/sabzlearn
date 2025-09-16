@@ -4,6 +4,7 @@ import {
     getAndShowPresellCourses,
     getAndShowArticles,
     getAndShowNavbarMenus,
+    getAndShowCategoryCourses,
 } from './funcs/shared.js';
 
 const selectionList = document.querySelector('.courses-topbar__selection-list');
@@ -25,9 +26,8 @@ window.addEventListener('load', () => {
     getAndShowPopularCourses();
     getAndShowPresellCourses();
     getAndShowArticles();
-    getAndShowNavbarMenus().then((data) => {
-        console.log(data);
-    });
+    getAndShowNavbarMenus();
+    getAndShowCategoryCourses();
 });
 
 function typewriter(text, index) {

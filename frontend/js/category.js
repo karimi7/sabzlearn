@@ -1,5 +1,7 @@
 import { getAndShowCategoryCourses } from './funcs/shared.js';
 
 window.addEventListener('load', () => {
-    getAndShowCategoryCourses()
+    getAndShowCategoryCourses().then(data => {
+        console.log(data);
+    });
 });
