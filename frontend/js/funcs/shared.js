@@ -1,5 +1,5 @@
 import { getMe } from './auth.js';
-import { isLogin, getUrlParam } from './utils.js';
+import { isLogin } from './utils.js';
 
 const showUserNameInNavbar = () => {
     const navbarProfielBox = document.querySelector('.main-header__profile');
@@ -338,16 +338,16 @@ const getAndShowNavbarMenus = async () => {
     return menus;
 };
 
-const getAndShowCategoryCourses = async () => {
-    const categoryName = getUrlParam('cat');
+// const getAndShowCategoryCourses = async () => {
+//     const categoryName = getUrlParam('cat');
 
-    console.log(getUrlParam('cat'));
+//     console.log(getUrlParam('cat'));
 
-    const res = await fetch(`http://localhost:4000/v1/courses/category/${categoryName}`);
-    const courses = await res.json();
+//     const res = await fetch(`http://localhost:4000/v1/courses/category/${categoryName}`);
+//     const courses = await res.json();
 
-    return courses;
-};
+//     return courses;
+// };
 
 export {
     showUserNameInNavbar,
@@ -357,5 +357,5 @@ export {
     getAndShowPresellCourses,
     getAndShowArticles,
     getAndShowNavbarMenus,
-    getAndShowCategoryCourses,
+    // getAndShowCategoryCourses,
 };
