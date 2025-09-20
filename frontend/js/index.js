@@ -4,7 +4,7 @@ import {
     getAndShowPresellCourses,
     getAndShowArticles,
     getAndShowNavbarMenus,
-    // getAndShowCategoryCourses,
+    getAndShowCategoryCourses,
 } from './funcs/shared.js';
 
 const selectionList = document.querySelector('.courses-topbar__selection-list');
@@ -28,9 +28,8 @@ window.addEventListener('load', () => {
     getAndShowArticles();
     getAndShowNavbarMenus().then(data => {
         console.log(data);
-        
     });
-    // getAndShowCategoryCourses();
+    getAndShowCategoryCourses();
 });
 
 function typewriter(text, index) {
